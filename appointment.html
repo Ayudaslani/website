@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V care</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- fonts css -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="assets/img/Group 447 (1).png" type="image/x-icon">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        nav{
+          z-index: 99999!important;
+        }
+        </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/Group 234.png" alt="">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" aria-current="page" href="doctor.html">DOCTOR</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active text-primary" aria-current="page" href="appointment.html">APPOINTMENT</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" aria-current="page" href="pharmacy.html">PHARMACY</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" aria-current="page" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="icon d-flex mb-2 mb-lg-0">
+                <li>
+                    <a href="#"><i class="fa-solid fa-gear"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/Ellipse 3.png" class="img-fluid ms-3" alt=""></a>
+                </li>
+                <li>
+                    <a href="#toggle" data-bs-toggle="offcanvas"><i class="fa-solid fa-bars"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="toggle" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <img src="assets/img/Group 234.png" alt="">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item ms-3">
+                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link" aria-current="page" href="doctor.html">DOCTOR</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link" aria-current="page" href="appointment.html">APPOINTMENT</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link" aria-current="page" href="pharmacy.html">PHARMACY</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link" aria-current="page" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- banner  -->
+    <section
+        style="background-image: url('./assets/img/Group\ 479.png'); padding: 350px 0; background-size: cover; background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <h2 style="color: white; text-align: center; font-size: 28px;">Book an appointment</h2>
+                <div class="d-flex justify-content-center">
+                    <p style="color: white; text-align: center; font-size: 20px;" class="col-12 col-lg-7 justify-content-center">
+                        Great doctor if you need your family member to get effective immediate assistance,emergency
+                        treatment or a simple consultation.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- banner  -->
+
+    <!-- nav and tabs -->
+     <section class="my-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item p-2" role="presentation">
+                          <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="border: 1px solid black; border-radius: 0;">Online Appointment</button>
+                        </li>
+                        <li class="nav-item p-2" role="presentation">
+                          <button class="nav-link text-primary" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style="background-color: #396CF01A; border-radius: 0;">Clinic Appointment</button>
+                        </li>
+                       
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="form">
+                                <form action="" class="d-flex ">
+                                    <div class="col-12 my-3 p-2">
+                                        <label for="" class=" d-flex d-block d-wrap" style="font-size: 16px;">Patient Name*</label>
+                                        <input type="text" placeholder="Patient Name" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-12 col-lg-6 my-3 p-2">
+                                        <label for="" class="d-flex d-block d-wrap" style="font-size: 16px;">Department*</label>
+                                        <input type="text" placeholder="Departments" class=" ps-3 w-100" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-12 col-lg-6 my-3 p-2">
+                                        <label for="" class="d-flex d-block d-wrap" style="font-size: 16px;">Doctor*</label>
+                                        <input type="text" placeholder="Doctor" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-12 col-lg-6 my-3 p-2">
+                                        <label for="" class="d-flex" style="font-size: 16px;">Your Email*</label>
+                                        <input type="text" placeholder="Your Email" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-12 col-lg-6 my-3 p-2">
+                                        <label for="" class="d-flex" style="font-size: 16px;">Your Phone*</label>
+                                        <input type="text" placeholder="Your Phone" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-12 col-lg-6 my-3 p-2">
+                                        <label for="" class="d-flex" style="font-size: 16px;">Appointment Date*</label>
+                                        <input type="text" placeholder="Appointment Date" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-12 col-lg-6 my-3 p-2">
+                                        <label for="" class="d-flex" style="font-size: 16px;">Appointment Time*</label>
+                                        <input type="text" placeholder="Appointment Time" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-12 my-3 p-2">
+                                        <label for="" class=" d-flex d-block d-wrap" style="font-size: 16px;">Comments</label>
+                                        <input type="text" placeholder="Your Message" class="w-100 ps-3" style="height: 100px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <button class="w-100 text-primary fw-bold m-2" style="border: 1px solid blue; border-radius:7px ;font-size: 18px; height: 50px; background-color: transparent;">Book an Appointment</button>
+                                   
+                                </form>
+                            </div>
+    
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div class="form">
+                                <form action="" class="d-flex ">
+                                    <div class="col-12 my-3">
+                                        <label for="" class=" d-flex d-block d-wrap" style="font-size: 16px;">Patient Name*</label>
+                                        <input type="text" placeholder="Patient Name" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-6 my-3 pe-2">
+                                        <label for="" class="d-flex d-block d-wrap" style="font-size: 16px;">Department*</label>
+                                        <input type="text" placeholder="Departments" class=" ps-3 w-100" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-6 my-3 ps-2">
+                                        <label for="" class="d-flex d-block d-wrap" style="font-size: 16px;">Doctor*</label>
+                                        <input type="text" placeholder="Doctor" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-6 my-3 pe-2">
+                                        <label for="" class="d-flex" style="font-size: 16px;">Your Email*</label>
+                                        <input type="text" placeholder="Your Email" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-6 my-3 ps-2">
+                                        <label for="" class="d-flex" style="font-size: 16px;">Your Phone*</label>
+                                        <input type="text" placeholder="Your Phone" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-6 my-3 pe-2">
+                                        <label for="" class="d-flex" style="font-size: 16px;">Appointment Date*</label>
+                                        <input type="text" placeholder="Appointment Date" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-6 my-3 ps-2">
+                                        <label for="" class="d-flex" style="font-size: 16px;">Appointment Time*</label>
+                                        <input type="text" placeholder="Appointment Time" class="w-100 ps-3" style="height: 40px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <div class="col-12 my-3">
+                                        <label for="" class=" d-flex d-block d-wrap" style="font-size: 16px;">Comments</label>
+                                        <input type="text" placeholder="Your Message" class="w-100 ps-3" style="height: 100px;font-size:14px ; border: 1px solid gray; border-radius: 5px;">
+                                    </div>
+                                    <button class="w-100 text-primary fw-bold" style="border: 1px solid blue; border-radius:7px ;font-size: 18px; height: 50px; background-color: transparent;">Book an Appointment</button>
+                                   
+                                </form>
+                            </div>
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- nav and tabs -->
+
+    <!-- table start -->
+     <section class="py-3">
+        <div class="container">
+            <div class="row">
+                <h2 style=" text-align: center; font-size: 28px;">Doctors Time Table</h2>
+                <div class="d-flex justify-content-center mb-5">
+                    <p style=" text-align: center; font-size: 16px;" class="col-12 col-lg-7 justify-content-center">
+                        Great doctor if you need your family member to get effective immediate assistance,emergency
+                        treatment or a simple consultation.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table" width="1400px">
+                      <thead>
+                        <tr>
+                            <th>Time Table</th>
+                            <th>09:00 AM</th>
+                            <th>11:00 AM</th>
+                            <th>02:00 PM</th>
+                            <th>04:00 PM</th>
+                            <th>06:00 PM</th> 
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td class="fw-bold">Mon</td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/4cccfe37fff6668e44727ffdbb77b59d 2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;"> Bella Castillo</h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Radiologist</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/1000007032_x4_fast 2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;"> Calvin Carlo</h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Eye Care</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/af8c03e021aa5044f0c4709fd0ce9602 1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;">Leo Davis </h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Cardiologist</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Tues</td>
+                            <td></td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/1000007020_x4_fast 2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;">Alice Williams </h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Dentist</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Wed</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/28a6f53b54378bb1326f9f4e0b20908d 2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;">Sophia Taylor</h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Neurologists</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Thurs</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/1000007028_x4_fast 2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;">Tony Kovar</h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Orthopedic</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/897b3f34dd3e391054d7bdbaafabdbdc 2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;">Jessica
+                                            Williams</h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Dentist</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Fri</td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/img1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;"> Alia Reddy</h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Psychot-herapist</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/1000007024_x4_fast 2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;"> Hazel Kelly</h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Dermato - logist</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Sat</td>
+                            <td></td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/1000007030_x4_fast 2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;"> Ava Johnson </h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Dermatologist</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="assets/img/1000007034_x4_fast 2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size:18px;">James
+                                            Thomas </h2>
+                                        <p style="font-size: 20px;" class="text-secondary">Dentist</p>
+                                    </div>
+                                </div>
+                                <button style="border: 0; border-radius: 5px; background: #396CF01A;
+;" class="text-primary py-2 px-3 fw-bold">09:00 - 10:00 AM</button>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </div>
+     </section>
+    <!-- table end -->
+
+
+
+
+
+
+
+
+
+    <!-- footer start -->
+
+    <footer class="py-3 text-secondary" style="background-color: #202942;">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="p-3">
+                    <img src="assets/img/Group 233.png" alt="" class="mb-3">
+                    <div class="col-10">
+                        <p style="font-size: 15px;">Great doctor if you need your
+                            family member to get effective
+                            immediate assistance, emergency
+                            treatment or a simple consultation.</p>
+                    </div>
+
+                </div>
+                <div class="p-3">
+                    <h2 class="text-white mb-4" style="font-size: 20px;">Company</h2>
+                    <ul class="ps-0">
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">About Us</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Services</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Team</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Project</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Blog</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-3">
+                    <h2 class="text-white mb-4" style="font-size: 20px;">Departments</h2>
+                    <ul class="ps-0">
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Eye Care</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Psychotherapy</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Dental Care</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Orthopedic</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Cardiology</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Gynecology</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary">Neurology</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-3">
+                    <h2 class="text-white mb-4" style="font-size: 20px;">Contact us</h2>
+                    <ul class="ps-0">
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary"><i
+                                    class="fa-regular fa-envelope me-3"></i>lifecare@gmail.com</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary"><i class="fa-solid fa-phone me-3"></i>+152
+                                534-468-854</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary"><i class="fa-solid fa-phone me-3"></i>+152
+                                534-468-855</a>
+                        </li>
+                        <li class=" mb-2">
+                            <a href="#" class="text-secondary"><i class="fa-solid fa-location-dot me-3 mb-4"></i>View on
+                                Google map</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-facebook-f me-3"></i></a>
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-instagram me-3"></i></a>
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-twitter me-3"></i></a>
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-linkedin-in me-3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="py-3  border-top border-secondary">
+                    <ul class="d-flex justify-content-end">
+                        <li>
+                            <a href="#" class="text-secondary ms-3">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-secondary ms-3">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-secondary ms-3">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-secondary ms-3">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+
+    <!-- javascript js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
